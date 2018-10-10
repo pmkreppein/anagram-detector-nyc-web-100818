@@ -7,8 +7,8 @@ class Anagram
     @name = word 
   end   
 
-  def match(input)
-    input.map {|item| item.split("").sort == @name.split("").sort}
+  def match(song_names)
+    input.select {|item| item.split("").sort == @name.split("").sort}
     
   end   
 

@@ -15,4 +15,4 @@ class Anagram
 
 end
 
-    array.select {|x| x.split("").sort == @name.split("").sort}
+ 

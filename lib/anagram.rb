@@ -5,7 +5,7 @@ def initialize(word)
     @name = word 
   end   
   def match(anagrams)
-    input.select {|item| item.split("").sort == @name.split("").sort}
+    anagrams.select {|item| item.split("").sort == @name.split("").sort}
   end   
 end
 

@@ -8,8 +8,8 @@ class Anagram
   end   
 
   def match(input)
-    word_array = input.reduce{||}
-    word_array.sort == @name.split("").sort
+    word_array = input.select{|item| item.split("").sort}
+    word_array == @name.split("").sort
     
   end   
 
